@@ -2,7 +2,7 @@
 
 C · Data Structures Project
 
-📌 About
+# 📌 About
 
 FTTH/GPON network simulator developed as part of the Data Structures course.
 The project simulates an optical access network and analyzes signal quality for each user (ONT).
@@ -15,7 +15,7 @@ The project simulates an optical access network and analyzes signal quality for 
 
 📋 Dynamic array – stores per-splitter results
 
-🚀 Features
+# 🚀 Features
 
 Reads network topology from a text file
 
@@ -31,7 +31,7 @@ Exports results to CSV and report files
 
 Identifies TOP N worst ONTs by margin
 
-📈 Visualization
+# 📈 Visualization
 
 Python script generates graphs:
 
@@ -43,7 +43,7 @@ FAIL + DOWN per splitter
 
 TOP N worst ONTs
 
-🎯 Focus
+# 🎯 Focus
 
 Language: C
 
