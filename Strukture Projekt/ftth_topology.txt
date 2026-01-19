@@ -1,0 +1,46 @@
+OLT tx=3.0 rxmin=-25.0
+
+  SPLITTER name=S1 ratio=32 len=1.0 conn=2 sp=4
+    ONT id=1  len=0.8 conn=1 sp=1
+    ONT id=2  len=1.2 conn=1 sp=1
+    ONT id=3  len=2.0 conn=1 sp=2
+
+    SPLITTER name=S1A ratio=8 len=2.5 conn=2 sp=1
+      ONT id=4  len=1.0 conn=1 sp=1
+      ONT id=5  len=1.5 conn=1 sp=7
+
+  SPLITTER name=S2 ratio=16 len=1.5 conn=2 sp=3
+    ONT id=6  len=0.6 conn=1 sp=1
+    ONT id=7  len=1.0 conn=1 sp=1
+    ONT id=8  len=2. conn=1 sp=4
+ 
+    SPLITTER name=S2A ratio=8 len=0.7 conn=2 sp=2
+      ONT id=9  len=1.8 conn=1 sp=2
+      ONT id=10 len=2.4 conn=1 sp=2
+
+    SPLITTER name=S2B ratio=4 len=0.4 conn=2 sp=1
+      ONT id=11 len=0.9 conn=1 sp=1
+      ONT id=12 len=1.1 conn=1 sp=1
+
+  SPLITTER name=S3 ratio=64 len=2.0 conn=2 sp=4
+    ONT id=13 len=0.8 conn=1 sp=1
+    ONT id=14 len=1.4 conn=1 sp=2
+    ONT id=15 len=2.8 conn=1 sp=5
+
+    SPLITTER name=S3A ratio=16 len=1.0 conn=2 sp=2
+      ONT id=16 len=1.6 conn=1 sp=2
+      ONT id=17 len=1.0 conn=1 sp=1
+
+  SPLITTER name=S4 ratio=32 len=1.0 conn=2 sp=5 faulty=1 extra=50
+    ONT id=18 len=1.2 conn=1 sp=1
+    ONT id=19 len=1.8 conn=1 sp=2
+    ONT id=20 len=2.5 conn=1 sp=1
+
+    SPLITTER name=S4A ratio=16 len=1.0 conn=2 sp=2
+      ONT id=21 len=1.6 conn=1 sp=2
+      ONT id=22 len=1.0 conn=1 sp=1
+
+  SPLITTER name=S5 ratio=8 len=0.8 conn=2 sp=1
+    ONT id=23 len=0.5 conn=1 sp=1
+    ONT id=24 len=0.9 conn=1 sp=1
+    ONT id=25 len=1.3 conn=1 sp=6
